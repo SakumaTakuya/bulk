@@ -9,18 +9,22 @@ import SwiftData
 
 @Model
 class Menu {
+    @Attribute(.unique)
     let name: String
     let part: BodyPart
-    let type: MenuType
+    let recordables: [Recordable]
     
-    init(name: String, part: BodyPart, type: MenuType) {
+    init(name: String, part: BodyPart, recordables: [Recordable]) {
         self.name = name
         self.part = part
-        self.type = type
+        self.recordables = recordables
     }
 }
 
-enum MenuType: String, Codable {
+
+enum Recordable: String, Codable {
+    case rest = "rest"
     case time = "time"
+    case reps = "reps"
     case weight = "weight"
 }

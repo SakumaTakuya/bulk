@@ -9,6 +9,17 @@ import SwiftData
 
 @Model
 class Feelings {
-    let 
+    let difficulty: Difficulty
+    let remarks: String
+    
+    init(difficulty: Difficulty, remarks: String) {
+        self.difficulty = difficulty
+        self.remarks = remarks
+    }
 }
 
+enum Difficulty: String, Codable {
+    case hard = "hard"
+    case normal = "normal"
+    case easy = "easy"
+}

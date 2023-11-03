@@ -21,6 +21,12 @@
 		B2F2554E2AF4FC8600B6A0D7 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F2554C2AF4FC8600B6A0D7 /* Menu.swift */; };
 		B2F255502AF4FDBE00B6A0D7 /* BodyPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F2554F2AF4FDBE00B6A0D7 /* BodyPart.swift */; };
 		B2F255512AF4FDBE00B6A0D7 /* BodyPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F2554F2AF4FDBE00B6A0D7 /* BodyPart.swift */; };
+		B2F255532AF4FFCE00B6A0D7 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F255522AF4FFCE00B6A0D7 /* Workout.swift */; };
+		B2F255542AF4FFCE00B6A0D7 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F255522AF4FFCE00B6A0D7 /* Workout.swift */; };
+		B2F255562AF5023A00B6A0D7 /* Feelings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F255552AF5023A00B6A0D7 /* Feelings.swift */; };
+		B2F255572AF5023A00B6A0D7 /* Feelings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F255552AF5023A00B6A0D7 /* Feelings.swift */; };
+		B2F2555B2AF503D600B6A0D7 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F2555A2AF503D600B6A0D7 /* Record.swift */; };
+		B2F2555C2AF503D600B6A0D7 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F2555A2AF503D600B6A0D7 /* Record.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +62,9 @@
 		B2F255482AF4FACC00B6A0D7 /* Condition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
 		B2F2554C2AF4FC8600B6A0D7 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		B2F2554F2AF4FDBE00B6A0D7 /* BodyPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyPart.swift; sourceTree = "<group>"; };
+		B2F255522AF4FFCE00B6A0D7 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		B2F255552AF5023A00B6A0D7 /* Feelings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feelings.swift; sourceTree = "<group>"; };
+		B2F2555A2AF503D600B6A0D7 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +115,7 @@
 		B2F255192AF4FA5000B6A0D7 /* bulk */ = {
 			isa = PBXGroup;
 			children = (
+				B2F2555D2AF5057E00B6A0D7 /* app */,
 				B2F255472AF4FA9D00B6A0D7 /* domain */,
 				B2F2551A2AF4FA5000B6A0D7 /* bulkApp.swift */,
 				B2F2551C2AF4FA5000B6A0D7 /* ContentView.swift */,
@@ -145,11 +155,37 @@
 		B2F255472AF4FA9D00B6A0D7 /* domain */ = {
 			isa = PBXGroup;
 			children = (
+				B2F255592AF5026500B6A0D7 /* value */,
+				B2F255582AF5025800B6A0D7 /* entity */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		B2F255582AF5025800B6A0D7 /* entity */ = {
+			isa = PBXGroup;
+			children = (
 				B2F255482AF4FACC00B6A0D7 /* Condition.swift */,
 				B2F2554C2AF4FC8600B6A0D7 /* Menu.swift */,
 				B2F2554F2AF4FDBE00B6A0D7 /* BodyPart.swift */,
+				B2F255522AF4FFCE00B6A0D7 /* Workout.swift */,
+				B2F255552AF5023A00B6A0D7 /* Feelings.swift */,
+				B2F2555A2AF503D600B6A0D7 /* Record.swift */,
 			);
-			path = domain;
+			path = entity;
+			sourceTree = "<group>";
+		};
+		B2F255592AF5026500B6A0D7 /* value */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = value;
+			sourceTree = "<group>";
+		};
+		B2F2555D2AF5057E00B6A0D7 /* app */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = app;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,9 +320,12 @@
 			files = (
 				B2F2551D2AF4FA5000B6A0D7 /* ContentView.swift in Sources */,
 				B2F255492AF4FACC00B6A0D7 /* Condition.swift in Sources */,
+				B2F2555B2AF503D600B6A0D7 /* Record.swift in Sources */,
+				B2F255532AF4FFCE00B6A0D7 /* Workout.swift in Sources */,
 				B2F2551F2AF4FA5000B6A0D7 /* Item.swift in Sources */,
 				B2F2551B2AF4FA5000B6A0D7 /* bulkApp.swift in Sources */,
 				B2F255502AF4FDBE00B6A0D7 /* BodyPart.swift in Sources */,
+				B2F255562AF5023A00B6A0D7 /* Feelings.swift in Sources */,
 				B2F2554D2AF4FC8600B6A0D7 /* Menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,7 +336,10 @@
 			files = (
 				B2F255512AF4FDBE00B6A0D7 /* BodyPart.swift in Sources */,
 				B2F2554E2AF4FC8600B6A0D7 /* Menu.swift in Sources */,
+				B2F255572AF5023A00B6A0D7 /* Feelings.swift in Sources */,
 				B2F2552F2AF4FA5200B6A0D7 /* bulkTests.swift in Sources */,
+				B2F2555C2AF503D600B6A0D7 /* Record.swift in Sources */,
+				B2F255542AF4FFCE00B6A0D7 /* Workout.swift in Sources */,
 				B2F2554A2AF4FACC00B6A0D7 /* Condition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
