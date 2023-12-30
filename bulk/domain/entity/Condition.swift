@@ -8,7 +8,7 @@
 import SwiftData
 
 @Model
-class Condition {
+final class Condition {
     let staus: Status
     // その日に行った同じ部位の種目数
     let events: Int

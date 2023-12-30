@@ -8,7 +8,7 @@
 import SwiftData
 
 @Model
-class Feelings {
+final class Feelings {
     let difficulty: Difficulty
     let remarks: String
     

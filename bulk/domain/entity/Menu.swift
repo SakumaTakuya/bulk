@@ -8,7 +8,7 @@
 import SwiftData
 
 @Model
-class Menu {
+final class Menu {
     @Attribute(.unique)
     let name: String
     let part: BodyPart

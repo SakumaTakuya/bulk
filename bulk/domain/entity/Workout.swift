@@ -8,7 +8,7 @@
 import SwiftData
 
 @Model
-class Workout {
+final class Workout {
     let restSec: Int
     let timeSec: Int
     let reps: Int

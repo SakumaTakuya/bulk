@@ -25,7 +25,7 @@ struct bulkApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView(viewModel: RecordCollectionViewModel())
         }
         .modelContainer(sharedModelContainer)
     }

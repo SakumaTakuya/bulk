@@ -8,7 +8,7 @@
 import SwiftData
 
 @Model
-class BodyPart {
+final class BodyPart {
     let name: String
     
     init(_ name: String) {

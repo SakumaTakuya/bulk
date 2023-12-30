@@ -8,7 +8,8 @@
 import Foundation
 import SwiftData
 
-class Record {
+@Model
+final class Record {
     let menu: Menu
     let sets: [Workout]
     let feelings: Feelings
