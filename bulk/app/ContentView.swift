@@ -18,7 +18,7 @@ struct ContentView: View {
                     Text("test")
                 }
             }
-            .navigationTitle("menu")
+            .navigationTitle("record")
             .toolbar{
                 ToolbarItem(
                     placement: .navigationBarTrailing

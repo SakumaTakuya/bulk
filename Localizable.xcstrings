@@ -34,6 +34,17 @@
         }
       }
     },
+    "record" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "記録"
+          }
+        }
+      }
+    },
     "reps" : {
       "extractionState" : "manual",
       "localizations" : {

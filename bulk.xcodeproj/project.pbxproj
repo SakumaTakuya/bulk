@@ -32,6 +32,7 @@
 		B2F2555C2AF503D600B6A0D7 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F2555A2AF503D600B6A0D7 /* Record.swift */; };
 		B2F255662AF516DE00B6A0D7 /* MenuDecisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F255652AF516DE00B6A0D7 /* MenuDecisionView.swift */; };
 		B2F8702C2B40378C000B25A5 /* RecordableToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F8702B2B40378C000B25A5 /* RecordableToggle.swift */; };
+		B2F8702E2B4068F9000B25A5 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F8702D2B4068F9000B25A5 /* WorkoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		B2F2555A2AF503D600B6A0D7 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		B2F255652AF516DE00B6A0D7 /* MenuDecisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDecisionView.swift; sourceTree = "<group>"; };
 		B2F8702B2B40378C000B25A5 /* RecordableToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordableToggle.swift; sourceTree = "<group>"; };
+		B2F8702D2B4068F9000B25A5 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 				B2B4A3FB2B0F619E0004831B /* MenuSelectView.swift */,
 				B2B4A3FD2B0F62F00004831B /* MenuAddView.swift */,
 				B2F8702B2B40378C000B25A5 /* RecordableToggle.swift */,
+				B2F8702D2B4068F9000B25A5 /* WorkoutView.swift */,
 			);
 			path = app;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F8702E2B4068F9000B25A5 /* WorkoutView.swift in Sources */,
 				B2F2551D2AF4FA5000B6A0D7 /* ContentView.swift in Sources */,
 				B2B4A3FE2B0F62F00004831B /* MenuAddView.swift in Sources */,
 				B2F8702C2B40378C000B25A5 /* RecordableToggle.swift in Sources */,
