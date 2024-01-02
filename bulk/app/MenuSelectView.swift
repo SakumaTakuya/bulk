@@ -28,12 +28,10 @@ struct MenuSelectView: View {
     }
 
     var body: some View {
-        List {
-            // TODO: フィルターを追加
-            ForEach(menus) { menu in
-                Button(menu.name) {
-                    onSelect(menu)
-                }
+        // TODO: フィルターを追加
+        ForEach(menus) { menu in
+            Button(menu.name) {
+                onSelect(menu)
             }
         }
     }

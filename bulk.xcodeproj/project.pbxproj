@@ -32,7 +32,10 @@
 		B2F2555C2AF503D600B6A0D7 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F2555A2AF503D600B6A0D7 /* Record.swift */; };
 		B2F255662AF516DE00B6A0D7 /* MenuDecisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F255652AF516DE00B6A0D7 /* MenuDecisionView.swift */; };
 		B2F8702C2B40378C000B25A5 /* RecordableToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F8702B2B40378C000B25A5 /* RecordableToggle.swift */; };
-		B2F8702E2B4068F9000B25A5 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F8702D2B4068F9000B25A5 /* WorkoutView.swift */; };
+		B2F870342B414B9A000B25A5 /* RecordBaseSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F870332B414B9A000B25A5 /* RecordBaseSelectView.swift */; };
+		B2F870362B423E75000B25A5 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F870352B423E75000B25A5 /* Content.swift */; };
+		B2F8704A2B43E3B9000B25A5 /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F870492B43E3B9000B25A5 /* Difficulty.swift */; };
+		B2F8704C2B43E3DB000B25A5 /* Recordable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F8704B2B43E3DB000B25A5 /* Recordable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +79,10 @@
 		B2F2555A2AF503D600B6A0D7 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		B2F255652AF516DE00B6A0D7 /* MenuDecisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDecisionView.swift; sourceTree = "<group>"; };
 		B2F8702B2B40378C000B25A5 /* RecordableToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordableToggle.swift; sourceTree = "<group>"; };
-		B2F8702D2B4068F9000B25A5 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+		B2F870332B414B9A000B25A5 /* RecordBaseSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordBaseSelectView.swift; sourceTree = "<group>"; };
+		B2F870352B423E75000B25A5 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		B2F870492B43E3B9000B25A5 /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
+		B2F8704B2B43E3DB000B25A5 /* Recordable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recordable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +195,8 @@
 		B2F255592AF5026500B6A0D7 /* value */ = {
 			isa = PBXGroup;
 			children = (
+				B2F870492B43E3B9000B25A5 /* Difficulty.swift */,
+				B2F8704B2B43E3DB000B25A5 /* Recordable.swift */,
 			);
 			path = value;
 			sourceTree = "<group>";
@@ -201,7 +209,8 @@
 				B2B4A3FB2B0F619E0004831B /* MenuSelectView.swift */,
 				B2B4A3FD2B0F62F00004831B /* MenuAddView.swift */,
 				B2F8702B2B40378C000B25A5 /* RecordableToggle.swift */,
-				B2F8702D2B4068F9000B25A5 /* WorkoutView.swift */,
+				B2F870332B414B9A000B25A5 /* RecordBaseSelectView.swift */,
+				B2F870352B423E75000B25A5 /* Content.swift */,
 			);
 			path = app;
 			sourceTree = "<group>";
@@ -338,7 +347,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2F8702E2B4068F9000B25A5 /* WorkoutView.swift in Sources */,
 				B2F2551D2AF4FA5000B6A0D7 /* ContentView.swift in Sources */,
 				B2B4A3FE2B0F62F00004831B /* MenuAddView.swift in Sources */,
 				B2F8702C2B40378C000B25A5 /* RecordableToggle.swift in Sources */,
@@ -347,10 +355,14 @@
 				B2F255662AF516DE00B6A0D7 /* MenuDecisionView.swift in Sources */,
 				B2F255532AF4FFCE00B6A0D7 /* Workout.swift in Sources */,
 				B2F2551F2AF4FA5000B6A0D7 /* Item.swift in Sources */,
+				B2F870362B423E75000B25A5 /* Content.swift in Sources */,
 				B2F2551B2AF4FA5000B6A0D7 /* bulkApp.swift in Sources */,
 				B2F255502AF4FDBE00B6A0D7 /* BodyPart.swift in Sources */,
 				B2B4A3FC2B0F619E0004831B /* MenuSelectView.swift in Sources */,
+				B2F870342B414B9A000B25A5 /* RecordBaseSelectView.swift in Sources */,
 				B2F255562AF5023A00B6A0D7 /* Feelings.swift in Sources */,
+				B2F8704A2B43E3B9000B25A5 /* Difficulty.swift in Sources */,
+				B2F8704C2B43E3DB000B25A5 /* Recordable.swift in Sources */,
 				B2F2554D2AF4FC8600B6A0D7 /* Menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

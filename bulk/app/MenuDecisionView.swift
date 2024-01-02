@@ -8,37 +8,81 @@
 import SwiftUI
 import SwiftData
 
+
+//struct MenuDecisionView: View {
+//    @Environment(\.modelContext) private var modelContext
+//    @Query private var menus: [Menu]
+//    @Query private var records: [Record]
+//    
+//    @State var searchTerm = ""
+//    @State var recordBase: Record? = nil
+//    var items : [Menu] = []
+//    
+//    var body: some View {
+//        NavigationStack {
+//            List {
+//                ForEach(menus) { menu in
+//                    NavigationLink {
+//                        Text("test")
+//                    } label: {
+//                        Text(menu.name)
+//                    }
+//                }
+//            }
+//            .searchable(text: $searchTerm)
+//            .onChange(of: searchTerm) {
+//                if searchTerm.count > 0 {
+//                    _menus = Query(filter: #Predicate<Menu> {
+//                        $0.name.contains(searchTerm)
+//                    }, sort: \.name,
+//                    animation: .easeInOut)
+//                    
+//                    _records = Query(filter: #Predicate<Record> {
+//                        $0.menu.name.contains(searchTerm)
+//                    }, sort: \.date,
+//                    animation: .easeInOut)
+//
+//                } else {
+//                    _menus = Query(sort: \Menu.name, animation: .easeInOut)
+//                    _records = Query(sort: \Record.date, animation: .easeInOut)
+//                }
+//            }
+//        }
+//    }
+//}
+
 struct MenuDecisionView: View {
     @Environment(\.modelContext) private var modelContext
     @State private var isPresentWorkout = false
     @State var searchTerm = ""
-    @State var menu: Menu? = nil
+    @State var recordBase: Record? = nil
     var items : [Menu] = []
     
     var body: some View {
         NavigationStack {
-            MenuSelectView(searchTerm: searchTerm) { selected in
+            RecordBaseSelectView(searchTerm: searchTerm) { selected in
                 isPresentWorkout = true
-                menu = selected
+                recordBase = selected
             }
-                .searchable(text: $searchTerm)
-                .navigationTitle(String(localized: "menu"))
-                .toolbar{
-                    ToolbarItem(
-                        placement: .navigationBarTrailing
-                    ){
-                        NavigationLink{
-                            MenuAddView()
-                        }label:{
-                            //ボタンの名前
-                            Text("add")
-                        }
+            .searchable(text: $searchTerm)
+            .navigationTitle(String(localized: "menu"))
+            .toolbar{
+                ToolbarItem(
+                    placement: .navigationBarTrailing
+                ){
+                    NavigationLink{
+                        MenuAddView()
+                    }label:{
+                        //ボタンの名前
+                        Text("add")
                     }
                 }
-                .navigationDestination(isPresented: $isPresentWorkout) {
-                    Text(menu?.name ?? "")
-                }
-            
+            }
+            .navigationDestination(isPresented: $isPresentWorkout) {
+//                let name = recordBase?.menu.name ?? ""
+//                Text(name)
+                Text("name")
+            }
         }
     }
 }

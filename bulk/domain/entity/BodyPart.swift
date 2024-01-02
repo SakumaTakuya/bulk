@@ -11,7 +11,17 @@ import SwiftData
 final class BodyPart {
     let name: String
     
+    @Relationship(inverse: \Menu.part)
+    var menus: [Menu] = []
+
+    
     init(_ name: String) {
         self.name = name
+    }
+}
+
+extension BodyPart: Hashable {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(name)
     }
 }

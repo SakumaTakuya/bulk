@@ -12,9 +12,13 @@ import SwiftData
 struct bulkApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Menu.self,
+            BodyPart.self,
+            Workout.self,
+            Feelings.self,
+            Record.self
         ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: true)
 
         do {
             return try ModelContainer(for: schema, configurations: [modelConfiguration])
@@ -25,7 +29,7 @@ struct bulkApp: App {
 
     var body: some Scene {
         WindowGroup {
-//            ContentView(viewModel: RecordCollectionViewModel())
+            ContentView()
         }
         .modelContainer(sharedModelContainer)
     }

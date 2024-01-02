@@ -12,6 +12,15 @@
         }
       }
     },
+    "add body part" : {
+
+    },
+    "add menu name" : {
+
+    },
+    "All Dogs" : {
+
+    },
     "body part" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -22,6 +31,12 @@
           }
         }
       }
+    },
+    "Delete" : {
+
+    },
+    "History" : {
+
     },
     "menu" : {
       "extractionState" : "manual",
@@ -34,6 +49,12 @@
         }
       }
     },
+    "Menu" : {
+
+    },
+    "name" : {
+
+    },
     "record" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -44,6 +65,9 @@
           }
         }
       }
+    },
+    "recordable" : {
+
     },
     "reps" : {
       "extractionState" : "manual",
@@ -66,6 +90,26 @@
           }
         }
       }
+    },
+    "select" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選択"
+          }
+        }
+      }
+    },
+    "submit" : {
+
+    },
+    "Suggest" : {
+
+    },
+    "test" : {
+
     },
     "time" : {
       "extractionState" : "manual",

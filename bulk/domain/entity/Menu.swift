@@ -11,20 +11,15 @@ import SwiftData
 final class Menu {
     @Attribute(.unique)
     let name: String
-    let part: BodyPart
     let recordables: [Recordable]
     
-    init(name: String, part: BodyPart, recordables: [Recordable]) {
+    var part: BodyPart? = nil
+    
+    @Relationship(inverse: \Record.menu)
+    var records: [Record] = []
+    
+    init(name: String, recordables: [Recordable]) {
         self.name = name
-        self.part = part
         self.recordables = recordables
     }
-}
-
-
-enum Recordable: String, Codable {
-    case rest = "rest"
-    case time = "time"
-    case reps = "reps"
-    case weight = "weight"
 }

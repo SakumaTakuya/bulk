@@ -51,9 +51,7 @@ struct MenuAddView: View {
                                    return
                                 }
                                 
-                                addBodyPart(
-                                    part: BodyPart(newPart)
-                                )
+                                selectedPart = BodyPart(newPart)
                                 newPart = ""
                             }
                         }
@@ -75,11 +73,14 @@ struct MenuAddView: View {
                             guard let part = selectedPart else {
                                 return
                             }
-                            modelContext.insert(Menu(
+                            let menu = Menu(
                                 name: name,
-                                part: part,
                                 recordables: Array(recordables)
-                            ))
+                            )
+                            
+                            modelContext.insert(menu)
+                            part.menus.append(menu)
+                            try! modelContext.save()
                             dismiss()
                         }, label: {
                             Text("submit")
@@ -87,12 +88,6 @@ struct MenuAddView: View {
                     )
                 }
             }
-        }
-    }
-    
-    func addBodyPart(part: BodyPart) {
-        withAnimation {
-            modelContext.insert(part)
         }
     }
 }

@@ -10,15 +10,14 @@ import SwiftData
 
 @Model
 final class Record {
-    let menu: Menu
     let sets: [Workout]
-    let feelings: Feelings
     let date: Date
     
-    init(menu: Menu, sets: [Workout], feelings: Feelings, date: Date) {
-        self.menu = menu
+    var menu: Menu? = nil
+    var feelings: Feelings? = nil
+    
+    init(sets: [Workout], date: Date) {
         self.sets = sets
-        self.feelings = feelings
         self.date = date
     }
 }

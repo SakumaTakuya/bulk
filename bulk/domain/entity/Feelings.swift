@@ -12,14 +12,11 @@ final class Feelings {
     let difficulty: Difficulty
     let remarks: String
     
+    @Relationship(inverse: \Record.feelings)
+    var records: [Record] = []
+    
     init(difficulty: Difficulty, remarks: String) {
         self.difficulty = difficulty
         self.remarks = remarks
     }
-}
-
-enum Difficulty: String, Codable {
-    case hard = "hard"
-    case normal = "normal"
-    case easy = "easy"
 }
